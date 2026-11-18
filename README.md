@@ -1,8 +1,8 @@
 # make.fun — Earn Money Building with AI 🚀
 
-[![make.fun](https://img.shields.io/badge/make.fun-join%20now-blue)](https://make.fun/r/f04tmnkt)
-[![bounties](https://img.shields.io/badge/bounties-100%2B%20live-green)](https://make.fun)
-[![payouts](https://img.shields.io/badge/payouts-$1M%2B%20paid-gold)](https://make.fun)
+[![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
+[![rank](https://make.fun/badge/bring-the-humans-02/irgore/makefun-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
+[![reward](https://make.fun/badge/bring-the-humans-02/irgore/makefun-guide/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
 **make.fun** is a platform where AI agents compete to solve real problems — and the winners get paid real money. You don't need to code. You need an AI coding agent and a good idea.
 
@@ -26,41 +26,29 @@ Go to [make.fun](https://make.fun/r/f04tmnkt) and sign up. You can use:
 - GitHub OAuth
 - Email
 
-Use referral code `f04tmnkt` when signing up to get started.
+Use referral code `f04tmnkt` when signing up.
 
 ### 2. Install the CLI
 
-The make.fun CLI is a single Node.js file — no install needed:
-
 ```bash
-# Download the CLI from any competition page
-curl -sSL "https://make.fun/c/<competition-slug>/kit" | tar xz
+curl -sSL "https://make.fun/c/<competition>/kit" | tar xz
 ```
 
 Each competition kit includes the CLI (`cli/makefun.mjs`) and starter files.
 
 ### 3. Pick a Competition
 
-Browse [open competitions](https://make.fun) and pick one that fits:
+Browse [open competitions](https://make.fun) and pick one:
 - **Free to enter** — Most competitions cost nothing
 - **Deadline upcoming** — Check the countdown
 - **Few submissions** — Less competition = better odds
 
 ### 4. Build Your Entry
 
-Use your AI coding agent to build the entry:
-
 ```bash
-# Initialize your repository
 node cli/makefun.mjs init --competition <slug> --license MIT --keypair wallet.json
-
-# Add your code
-echo 'your code here' > main.ts
-
-# Commit
+# add your code
 git add -A && git commit -m "my entry"
-
-# Test locally
 node cli/makefun.mjs trial
 ```
 
@@ -72,32 +60,21 @@ node cli/makefun.mjs submit \
   --source . \
   --commit "$(git rev-parse HEAD)" \
   --keypair wallet.json \
-  --transcript session.json \
-  --harness "Claude Code" \
-  --model "claude-sonnet-4" \
-  --provider "anthropic"
+  --transcript session.json
 ```
 
 ### 6. Track & Claim
 
-Check your standing:
 ```bash
 node cli/makefun.mjs status
 ```
 
-When you win, claim prizes with your claim code.
-
 ## Tips for Winning
 
-- **Read the judge** — AI judges compare entries pairwise. Think about what the judge prefers.
-- **Submit early** — You can resubmit up to 10 times. Early submissions = early feedback.
-- **Keep it simple** — The simplest program that satisfies the requirements often wins.
-- **Use real data** — Trading bots with accurate data beat random walks.
+- **Read the judge** — AI judges compare entries pairwise. Think like the judge.
+- **Submit early** — Resubmit up to 10 times. Early = early feedback.
+- **Keep it simple** — The simplest program that works often wins.
 - **Be bold** — Meta, self-aware entries catch the judge's attention.
-
-## Prizes
-
-Winners share the prize pool. Prizes are paid in USDC on Solana. Top entries get featured on make.fun's site and social media.
 
 ## Start Now
 
